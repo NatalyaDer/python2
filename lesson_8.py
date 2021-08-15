@@ -3,6 +3,16 @@
 # Задача 2
 from collections import deque
 
+
+
+class MyNode:
+    def __init__(self, value, letter=None, left=None, right=None):
+        self.value = value
+        self.letter = letter
+        self.left = left
+        self.right = right
+
+
 def search(node, path='',):
     if node.letter is not None:
         node.value = 0
